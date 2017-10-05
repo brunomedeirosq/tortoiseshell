@@ -1,0 +1,151 @@
+div {
+  border: 1px solid black;
+}
+
+/* root style and main site container positioning */
+html {
+  /* base font size or root size for rem */
+  font-size: 18px;
+  font-family: Helvetica;
+  color: white;
+  line-height: 1.4;
+}
+
+/* common width shared */
+.site-container {
+  width: 960px;
+}
+
+/* common display properties */
+
+.main-picture nav,
+.header-bar,
+.logo-brand,
+.menu ul,
+.container,
+.banner-container,
+.supporting,
+.service,
+.supporting-container,
+footer,
+.footer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* style for header section including: main-picture bar and banner over main-picture */
+
+.main-picture {
+  height: 31rem;
+  background-image: url('../images/glasses-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-bar {
+  /* This property justify-content overlap the more generic center value defined above "common display properties" */
+  justify-content: space-between;
+  background-color: cadetblue;
+  margin-top: 1rem;
+}
+
+  /* logo-brand style */
+
+  .logo-brand img {
+    height: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+  }
+
+  /* menu style */
+
+  .menu li {
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  /* banner style */
+  .banner-container {
+    justify-content: flex-end;
+  }
+
+  .banner {
+    margin-top: 10rem;
+    margin-right: -2rem;
+    background-color: white;
+  }
+
+  .banner h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.2rem;
+    padding: 2rem 5rem;
+  }
+
+/* style for main section */
+
+.supporting {
+  align-items: flex-start;
+  padding-top: 3rem;
+}
+
+.service {
+  flex-direction: column;
+  height: 8rem;
+  margin-right: 6rem;
+  justify-content: space-between;
+  text-align: center;
+  color: black;
+}
+
+.service.paper,
+.service.paper img {
+  width: 3.5rem;
+}
+
+.service.ruler,
+.service.truck,
+.service.ruler img,
+.service.truck img {
+  width: 5rem;
+}
+
+.supporting-container {
+  align-items: flex-start;
+}
+
+.description-container {
+  width: 35%;
+  color: black;
+  margin-right: 5%;
+}
+
+.title {
+  font-weight: bold;
+  color: white;
+  background-color: cadetblue;
+  width: 10rem;
+  padding: 0.5rem 0rem 0.5rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* style for footer section */
+
+footer {
+  margin-top: 5rem;
+}
+
+footer img {
+  height: 1.5rem;
+  margin: 4rem 1rem 4rem 4rem;
+}
+
+.footer-section {
+  justify-content: flex-start;
+  background-color: azure;
+  color: black;
+}
